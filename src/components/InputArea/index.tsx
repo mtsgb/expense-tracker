@@ -1,5 +1,6 @@
 import { Container } from './styles';
 import { Item } from '../../types';
+import  Button  from '../Button';
 
 type Props = {
     onAdd: (item: Item) => void;
@@ -19,7 +20,7 @@ export const InputArea = ({ onAdd }: Props) => {
 
     return (
         <Container>
-            <button onClick={handleAddEvent}>Adicionar</button>
+            <Button title='Adicionar' onClick={handleAddEvent}/>
         </Container>
     );
 }
